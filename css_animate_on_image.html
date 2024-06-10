@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/color/jquery.color.plus-names-2.2.0.js" integrity="sha256-B2NKhQ/4wyx0RUkvxp34OVk2/+J9zwZRpFyQIst5/XY=" crossorigin="anonymous"></script>
+<body>
+    <button>click</button> <br>
+ <img src="./pritam.jpg" width="300px" alt="">
+  <script>
+   $('button').click(function(){
+        $('img').css({border:'2px solid blue'}).animate({
+    borderWidth:'100px',borderColor:'red'
+   },10000)
+})
+
+  </script>
+</body>
+</html>
