@@ -1,0 +1,60 @@
+<div id="a" style="border: 4px black dotted; font-size: 50px; color: blueviolet; font-style: oblique;"></div>
+<script>
+
+// function student (name, city,college,course){
+//     this.name=name
+//     this.city=city
+//     this.college=college
+//     this.course=course
+//     this.full_detail= function(){
+//     return this.name+'<br>'+this.city+'<br>'+this.college+'<br>'+this.course
+//     }
+//     }
+
+
+// var deepak= new student('pritam','bhopal','uit','java')
+
+// document.getElementById('a').innerHTML=deepak.full_detail()
+
+
+
+
+
+//                               #PROTOTYPE
+
+
+// function student(name,city,college){
+//  this.name=name,
+//  this.city=city,
+//  this.college=college   
+// }
+// student.prototype.nationality = 'INDIAN'
+//  var k = new student ('pritam','bhopal','UIT')
+//  var value = ''
+//  for(let i in k){
+//   value += k[i]+'<br>'
+//  }
+// document.getElementById('a').innerHTML=value
+
+
+
+
+
+
+//                               #EXTERNAL METHOD USING CONSTRUCTOR
+
+ function student(name,city,college){
+ this.name=name,
+ this.city=city,
+ this.college=college   
+}
+student.prototype.nationality = 'INDIAN'
+student.prototype.all = function(){
+return this.name+'<br>'+this.city+'<br>'+this.college+'<br>'+this.nationality
+}
+
+ var k = new student('pritam','bhopal','UIT')
+document.getElementById('a').innerHTML=k.all()
+
+
+</script>
