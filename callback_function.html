@@ -1,0 +1,38 @@
+<script>
+// function add(a,b){
+//     return a+b
+// }
+
+// function demo(r,x,y){
+
+// r(x,y)
+// alert(x-y)
+// }
+// let k = add(40,1)
+// alert(k)
+// demo(add,20,50)
+
+
+
+
+function exponential(a,b){
+ return a**b  
+}
+
+function modulus (p,x,y){
+    var num3= Number(prompt("enter 1st number for exp"))
+    var num4 = Number(prompt("enter 2nd number exponen"))
+    let j=p(num3,num4)
+    alert(j)
+    return x%y
+}
+var num1 = Number(prompt("enter 1st number"))
+var num2 = Number(prompt("enter 2nd number"))
+
+let l=modulus(exponential,num1,num2)
+alert(l)
+
+
+
+
+</script>
