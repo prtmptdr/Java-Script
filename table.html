@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="b">enter a number for table</label>
+    <input type="text" name="" id="b"><br>
+    <button onclick="f1()">click </button>  
+ <div id="a"></div> 
+ <script>
+ function f1(){
+ var input= document.getElementById('b').value
+  var num =1
+  var text =''
+  while(num<=10){
+    text = text+''+(num*input).toFixed(3)+'&emsp;';
+    num++;
+  }
+ document.getElementById('a').innerHTML=text
+
+ }   
+ </script>
+</body>
+</html>
+
