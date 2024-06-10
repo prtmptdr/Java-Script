@@ -1,0 +1,16 @@
+<script>
+document.write("printing of an object as avalue <br>")
+var k  ={'student1': {'name':'rahul','branch':'cs'},'student2':{'name':'ramesh','branch':'ec'}}
+for( i in k.student1)
+document.write(i+":"+k.student1[i]+"<br><br>")
+for( i in k.student2)
+document.write(i+":"+k.student2[i]+"<br><br>")
+var p ={'student1': [{'name':'rahul','branch':'cs'},{'name':'ramesh','branch':'ec'}]}
+document.write("printing of an array as avalue <br><br>")
+for(i in p.student1){
+document.write(p.student1[i].name+"<br><br>")
+document.write(p.student1[i].branch+"<br><br>")
+}
+// there are 2 ways to access data ,1.bracket notation 2. .period / dot notation
+
+</script>
