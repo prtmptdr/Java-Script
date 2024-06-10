@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+#a{
+    width: 200px;height: 200px; background-color: brown;position: relative;
+}
+
+@keyframes oye{
+from{top: 0;}
+to{top: 800px;}
+}
+
+    </style>
+</head>
+<body>
+ <button onclick="f1()">click</button>  
+ <div id="a"></div> 
+ <script>
+function f1(){
+ document.getElementById('a').style.animation ="oye 6s 2";
+}
+
+
+
+ </script>
+</body>
+</html>
