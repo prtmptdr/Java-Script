@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <button onclick="f1()">click here</button> 
+ <div id="a"></div>  
+</body>
+<script>
+function f1(){
+ var k= document.getElementById('a')
+ k.style.border = 'double red 1cm';
+ k.style.width = '7cm';
+ k.style.height = '7cm';
+ k.style.borderRadius= '3cm 0.5cm';
+ k.style.marginLeft ='2cm';
+ k.style.marginTop ='2cm';
+ k.animate([{transform:'rotate(360deg)',backgroundColor :'blue'}],{iterations:Infinity,duration:10000})
+
+}
+</script>
+</html>
