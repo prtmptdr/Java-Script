@@ -1,0 +1,27 @@
+<div id="j" style="color: red; font-size: 80px; font-style: italic;"></div>
+<script>
+// var student = {
+//   name: 'pritam', city : 'bhopal', college: 'UIT' , branch: 'IT'
+   
+//   }
+// //   for(let i in student){
+// // document.write(student[i] + '<br>')
+// // }
+
+
+// document.write(student['city'])
+
+// literal
+
+var student = {
+  name: 'pritam', 
+  city : 'bhopal',
+  college: 'UIT' ,
+  branch: 'IT',   
+  full_details: function(){
+    return this.name + '<br>' +this.city+'<br>'+this.college+'<br>'+this.branch
+  }
+  }
+ document.getElementById('j').innerHTML=student.full_details()
+
+</script>
