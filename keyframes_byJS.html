@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+#a{
+    width: 200px; height: 200px; background-color: wheat;border: 2px dotted; position: relative;
+}
+@keyframes prtm{
+    0%{left: 0; top: 0; background-color: black; background-image: radial-gradient(blue,black,green); border-radius: 4cm 0.1cm;}
+    25%{left: 800px; top: 0;background-color: brown;border-radius: 4cm 0.1cm; border: 20px dotted rgb(139,139,170); width: 10cm; height: 5cm;}
+    50%{left:800px ; top: 400px; background-color: pink;border-radius: 4cm 0.1cm;}
+    75%{left: 0; top: 200px; background-color: black; background-image: radial-gradient(blue,black,green); border-radius: 4cm 0.1cm;}
+    100%{left: 0; top: 0; border-radius: 50%;}
+
+}
+
+    </style>
+</head>
+<body>
+ <button onclick="f1() ,f2()">click</button> 
+ <div id="a"></div>  
+</body>
+<script>
+function f1(){
+document.getElementById('a').style.animation="prtm 10s infinite alternate"
+}
+function f2(){
+var k =document.getElementById('a').style
+k.backgroundColor ="black"
+k.border =" double red 1cm"
+}
+
+
+</script>
+</html>
