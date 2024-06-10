@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" onsubmit="return fun()">
+<input type="text" name="uname" id="uname" placeholder="enter user name">
+<button>submit</button>
+
+<script>
+// function fun(){
+//     let x = document.getElementById('uname').value
+//     if(x===''){
+//         alert("kindly fill the value")
+//         return false 
+//     }
+//     else{
+//         alert("form is being submitted")
+//         return true  
+//     }
+// }
+
+
+
+//                               # MO. NUMBER
+function fun(){
+let k = document.getElementById("uname").value  
+if( k==''|| isNaN(k)||k<6000000000 || k>9999999999){
+alert("Number is not valid")
+return false
+}
+else{
+ alert("form is being submitted")
+ return true
+}
+
+}
+
+</script> 
+ </form>  
+</body>
+</html>
