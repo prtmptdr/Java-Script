@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <canvas id="a" width="2000" height="2000"></canvas> 
+   <script>
+    //                               #RECTANGLE
+
+var p = document.getElementById('a')
+var q =p.getContext('2d')
+q.fillStyle ="red"
+q.fillRect(1300 ,500,100,100)
+q.fillStyle="blue"
+q.globalAlpha = 0.7
+q.fillRect(1320,520,100,100)
+q.fillStyle="pink"
+q.fillRect(1350,550,100,100)
+
+
+
+
+
+//                                        #CIRCLE
+var k = document.getElementById('a')
+var j =p.getContext('2d')
+j.arc(100,100,50,0.25*Math.PI,0.5*Math.PI)
+j.fillStyle ="red"
+j.fill()
+j.stroke();
+j.beginPath()
+j.moveTo(0,200)
+j.lineTo(200,200)
+//                                       #FOR LINE
+j.lineWidth='10'
+j.strokeStyle= 'blue'
+j.stroke()
+
+//                                            #for TRIANGLE 
+var m = document.getElementById('a')
+var trygl = m.getContext('2d')
+trygl.beginPath()
+trygl.moveTo(800,200);
+trygl.lineTo(500,500)
+trygl.lineTo(1100,500)
+trygl.closePath()
+trygl.fillStyle='black'
+trygl.fill()
+
+   </script>
+</body>
+</html>
