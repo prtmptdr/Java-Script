@@ -1,0 +1,23 @@
+<script>
+
+    //                            #SERILIZATION
+var student ={
+name: 'pritam',
+city: 'bhopal',
+state: 'MP',
+country:'india'
+}
+var data = JSON.stringify(student)
+document.write(data+'<br>')
+
+
+
+//                              # DESERILIZATION
+var object=JSON.parse('{"name":"pritam","city":"bhopal","state":"MP","country":"india"}')
+var value = ''
+for(let i in object){
+ value+=i+'=>'+object[i]+'<br>'   
+}
+document.write(value)
+
+</script>
